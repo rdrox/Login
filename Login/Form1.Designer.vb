@@ -34,6 +34,7 @@ Partial Class Form1
         Me.TableAdapterManager = New Login.Library_FINAL_FINALDataSetTableAdapters.TableAdapterManager()
         Me.EmployeesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.EmployeesTableAdapter = New Login.Library_FINAL_FINALDataSetTableAdapters.EmployeesTableAdapter()
+        Me.Label1 = New System.Windows.Forms.Label()
         EmailLabel = New System.Windows.Forms.Label()
         PasswordLabel = New System.Windows.Forms.Label()
         CType(Me.MembersBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -44,7 +45,7 @@ Partial Class Form1
         'EmailLabel
         '
         EmailLabel.AutoSize = True
-        EmailLabel.Location = New System.Drawing.Point(40, 102)
+        EmailLabel.Location = New System.Drawing.Point(172, 93)
         EmailLabel.Name = "EmailLabel"
         EmailLabel.Size = New System.Drawing.Size(35, 13)
         EmailLabel.TabIndex = 15
@@ -53,7 +54,7 @@ Partial Class Form1
         'PasswordLabel
         '
         PasswordLabel.AutoSize = True
-        PasswordLabel.Location = New System.Drawing.Point(40, 125)
+        PasswordLabel.Location = New System.Drawing.Point(151, 116)
         PasswordLabel.Name = "PasswordLabel"
         PasswordLabel.Size = New System.Drawing.Size(56, 13)
         PasswordLabel.TabIndex = 17
@@ -61,7 +62,7 @@ Partial Class Form1
         '
         'BtnLogin
         '
-        Me.BtnLogin.Location = New System.Drawing.Point(118, 170)
+        Me.BtnLogin.Location = New System.Drawing.Point(229, 161)
         Me.BtnLogin.Name = "BtnLogin"
         Me.BtnLogin.Size = New System.Drawing.Size(75, 23)
         Me.BtnLogin.TabIndex = 19
@@ -70,14 +71,14 @@ Partial Class Form1
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(108, 99)
+        Me.txtUsername.Location = New System.Drawing.Point(219, 90)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(100, 20)
         Me.txtUsername.TabIndex = 20
         '
         'txtPW
         '
-        Me.txtPW.Location = New System.Drawing.Point(108, 125)
+        Me.txtPW.Location = New System.Drawing.Point(219, 116)
         Me.txtPW.Name = "txtPW"
         Me.txtPW.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPW.Size = New System.Drawing.Size(100, 20)
@@ -115,11 +116,22 @@ Partial Class Form1
         '
         Me.EmployeesTableAdapter.ClearBeforeFill = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(433, 37)
+        Me.Label1.TabIndex = 22
+        Me.Label1.Text = "Welcome To The E-Library!"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(297, 272)
+        Me.ClientSize = New System.Drawing.Size(480, 224)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtPW)
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.BtnLogin)
@@ -144,4 +156,5 @@ Partial Class Form1
     Friend WithEvents txtPW As TextBox
     Friend WithEvents EmployeesBindingSource As BindingSource
     Friend WithEvents EmployeesTableAdapter As Library_FINAL_FINALDataSetTableAdapters.EmployeesTableAdapter
+    Friend WithEvents Label1 As Label
 End Class
