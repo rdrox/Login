@@ -21,15 +21,18 @@
                 RowData = MembersTableAdapter.GetDataByEmail(txtUsername.Text)(0)
                 Password = RowData.Password
 
+                'entered password = DB PW
                 If Password = txtPW.Text Then
                     MessageBox.Show("Login successful")
 
                     'Me.Hide()
+                    'txtbox PW != DB PW
                 Else
                     MessageBox.Show("Login unsuccessful")
                     txtPW.Clear()
                 End If
 
+            'empty txtbox
             Else
                 If txtUsername.Text = String.Empty Or txtPW.Text = String.Empty Then
                     MessageBox.Show("please enter your email and password")
