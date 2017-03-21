@@ -45,43 +45,48 @@ Partial Class Form1
         'EmailLabel
         '
         EmailLabel.AutoSize = True
-        EmailLabel.Location = New System.Drawing.Point(172, 93)
+        EmailLabel.Location = New System.Drawing.Point(220, 145)
+        EmailLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         EmailLabel.Name = "EmailLabel"
-        EmailLabel.Size = New System.Drawing.Size(35, 13)
+        EmailLabel.Size = New System.Drawing.Size(52, 20)
         EmailLabel.TabIndex = 15
         EmailLabel.Text = "Email:"
         '
         'PasswordLabel
         '
         PasswordLabel.AutoSize = True
-        PasswordLabel.Location = New System.Drawing.Point(151, 116)
+        PasswordLabel.Location = New System.Drawing.Point(188, 180)
+        PasswordLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         PasswordLabel.Name = "PasswordLabel"
-        PasswordLabel.Size = New System.Drawing.Size(56, 13)
+        PasswordLabel.Size = New System.Drawing.Size(82, 20)
         PasswordLabel.TabIndex = 17
         PasswordLabel.Text = "Password:"
         '
         'BtnLogin
         '
-        Me.BtnLogin.Location = New System.Drawing.Point(229, 161)
+        Me.BtnLogin.Location = New System.Drawing.Point(306, 250)
+        Me.BtnLogin.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.BtnLogin.Name = "BtnLogin"
-        Me.BtnLogin.Size = New System.Drawing.Size(75, 23)
+        Me.BtnLogin.Size = New System.Drawing.Size(112, 35)
         Me.BtnLogin.TabIndex = 19
         Me.BtnLogin.Text = "Login"
         Me.BtnLogin.UseVisualStyleBackColor = True
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(219, 90)
+        Me.txtUsername.Location = New System.Drawing.Point(290, 140)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(100, 20)
+        Me.txtUsername.Size = New System.Drawing.Size(148, 26)
         Me.txtUsername.TabIndex = 20
         '
         'txtPW
         '
-        Me.txtPW.Location = New System.Drawing.Point(219, 116)
+        Me.txtPW.Location = New System.Drawing.Point(290, 180)
+        Me.txtPW.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtPW.Name = "txtPW"
         Me.txtPW.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPW.Size = New System.Drawing.Size(100, 20)
+        Me.txtPW.Size = New System.Drawing.Size(148, 26)
         Me.txtPW.TabIndex = 21
         '
         'MembersBindingSource
@@ -120,23 +125,25 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(40, 40)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(433, 37)
+        Me.Label1.Size = New System.Drawing.Size(635, 55)
         Me.Label1.TabIndex = 22
         Me.Label1.Text = "Welcome To The E-Library!"
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(480, 224)
+        Me.ClientSize = New System.Drawing.Size(720, 345)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtPW)
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.BtnLogin)
         Me.Controls.Add(EmailLabel)
         Me.Controls.Add(PasswordLabel)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.MembersBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

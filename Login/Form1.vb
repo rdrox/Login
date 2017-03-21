@@ -1,7 +1,5 @@
 ﻿Public Class Form1
 
-
-
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
 
         Dim NumberOfRows As Integer
@@ -32,7 +30,7 @@
                     txtPW.Clear()
                 End If
 
-            'empty txtbox
+                'empty txtbox
             Else
                 If txtUsername.Text = String.Empty Or txtPW.Text = String.Empty Then
                     MessageBox.Show("please enter your email and password")
@@ -66,7 +64,16 @@
 
     End Sub
 
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label1.Left = (Label1.Parent.Width \ 2) - (Label1.Width \ 2)
+        BtnLogin.Left = (BtnLogin.Parent.Width \ 2) - (BtnLogin.Width \ 2)
+        txtUsername.Left = (txtUsername.Parent.Width \ 2) - (txtUsername.Width \ 2)
+        txtPW.Left = (txtPW.Parent.Width \ 2) - (txtPW.Width \ 2)
+    End Sub
 End Class
 
 
